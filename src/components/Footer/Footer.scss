@@ -1,0 +1,17 @@
+.footer{
+    height: 70px;
+    background: #ffffff;
+    border-top: 2px solid rgb(196, 196, 196);
+    // text-align: center;
+    & .container{
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    &__text{
+        color: rgb(182, 182, 182);
+        font-size: 16px;
+        font-weight: normal;   
+    }
+}

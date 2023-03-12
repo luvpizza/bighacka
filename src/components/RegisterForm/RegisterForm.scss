@@ -1,0 +1,27 @@
+form{
+    background: #ffffff;
+    width: max-content;
+    display: flex;
+    padding: 30px 40px;
+    flex-direction: column;
+}
+
+.register-form{
+    &__title{
+        font-weight: 800;
+        width: 100%;
+    }
+    &__input{
+        margin-top: 30px;
+        width: 700px;
+    }
+}
+
+.name-inputs{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    & input{
+        width: 330px;
+    }
+}

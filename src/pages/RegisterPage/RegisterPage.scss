@@ -1,0 +1,32 @@
+.main{
+    background: #eeeeee;
+    height: 100vh;
+    z-index: 0;
+}
+.register-page{
+    &__bg-image{
+        position: absolute;
+        z-index: 1;
+        top: 5%;
+        width: 48%;
+        right: 18%;
+
+        height: auto;
+        & > img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            transition: 0.2s;
+            &:hover{
+                // transform: scale(0.98);
+                filter: drop-shadow(-10px 12px 3px rgba(29, 99, 41, 0.37));
+            }
+        }
+    }
+}
+
+.register-page__register-form{
+    position: relative;
+    z-index: 2;
+}

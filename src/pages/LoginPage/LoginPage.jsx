@@ -8,12 +8,12 @@ import Footer from "../../components/Footer/Footer";
 const LoginPage = () => {
     return ( 
         <div>
-            <div className="main">
             <Header/>
+            <div className="main">
                 <div className="login__image">
                     <img src={LoginImage} alt="ppl" />
                 </div>
-                <LoginForm/>
+                <LoginForm className="login-form"/>
                 
             </div>
                 <Footer/>

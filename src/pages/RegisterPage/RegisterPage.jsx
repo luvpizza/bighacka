@@ -10,8 +10,8 @@ import RegisterForm from "../../components/RegisterForm/RegisterForm";
 const RegisterPage = () => {
     return ( 
         <div>
-            <div className="main">
             <Header/>
+            <div className="main">
                 <div className="register-page__bg-image">
                     <img src={RegisterImage} alt="guy" />
                 </div>

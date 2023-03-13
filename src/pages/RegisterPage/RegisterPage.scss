@@ -5,7 +5,7 @@
 }
 .register-page{
     &__bg-image{
-        position: fixed;
+        position: absolute;
         z-index: 1;
         top: 30px;
         width: 900px;
@@ -29,4 +29,6 @@
 .register-page__register-form{
     position: relative;
     z-index: 2;
+    left: 100px;
+    top: 100px;
 }

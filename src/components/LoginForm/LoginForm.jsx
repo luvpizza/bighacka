@@ -1,4 +1,5 @@
 import "./LoginForm.scss"
+import { Link } from "react-router-dom"
 
 const LoginForm = () => {
 
@@ -15,7 +16,7 @@ const LoginForm = () => {
                 <input type="password" className="login-form__input login-form__input_password" placeholder="Пароль"/>
                 <button className="login-form__btn">Войти</button>
             </div>
-            <p className="login-form__subtext"> Нет аккаунта? <strong className="login-form__subtext_link">Зарегистрируйтесь</strong> </p>
+            <p className="login-form__subtext"> Нет аккаунта? <strong className="login-form__subtext_link"><Link to="/">Зарегистрируйтесь</Link></strong> </p>
         </form>
      );
 }

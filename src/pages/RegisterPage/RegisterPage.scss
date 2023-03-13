@@ -1,15 +1,15 @@
 .main{
     background: #eeeeee;
-    height: 100vh;
+    height: calc(100vh - 70px);
     z-index: 0;
 }
 .register-page{
     &__bg-image{
-        position: absolute;
+        position: fixed;
         z-index: 1;
-        top: 5%;
-        width: 48%;
-        right: 18%;
+        top: 30px;
+        width: 900px;
+        right: 200px;
 
         height: auto;
         & > img{

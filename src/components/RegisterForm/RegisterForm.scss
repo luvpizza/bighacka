@@ -1,27 +1,44 @@
-form{
+.register-form-div form{
+    position: absolute;
+    left: 5%;
+    top: 12%;
     background: #ffffff;
-    width: max-content;
+    width: 700px;
     display: flex;
     padding: 30px 40px;
     flex-direction: column;
+    box-shadow: 5px 7px 7px 4px #3d5a4196;
 }
 
 .register-form{
     &__title{
         font-weight: 800;
-        width: 100%;
+        width: 550px;
+        text-align: right;
+        align-self: flex-end;
     }
     &__input{
-        margin-top: 30px;
-        width: 700px;
+        margin-top: 15px;
+        width: 500px;
+    }
+    &__btn{
+        margin-top: 40px;
+        width: 500px;
     }
 }
 
 .name-inputs{
-    margin-top: 30px;
+    width: 500px;
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
     & input{
-        width: 330px;
+        width: 240px;
+    }
+}
+
+@media (max-width: 800px) {
+    .register-form-div form{
+        background: red;
     }
 }

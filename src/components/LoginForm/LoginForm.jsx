@@ -1,5 +1,5 @@
 import "./LoginForm.scss"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import TextInput from "../Inputs/TextInput/TextInput"
 import Button from "../Inputs/Button/Button"
 import { useState } from "react"
@@ -37,8 +37,24 @@ const LoginForm = ({className}) => {
         }
       }
 
+    let role = 2
+    const navigate = useNavigate()
+
     const handleClick = async (e) => {
         e.preventDefault()
+        
+        switch (role){
+            default: break;
+
+            case 1:
+                navigate("/profile")
+                break;
+            case 2:
+                navigate("/moderator")
+                break;
+            
+        }
+
         if(email && password){
             console.log(email, password);
             const data = await login(email,password)
@@ -47,6 +63,8 @@ const LoginForm = ({className}) => {
                 localStorage.setItem("token", data.token)
                 const profileInfo = await getProfile(localStorage.getItem("token"));
                 console.log(profileInfo)
+
+
             }
             
 

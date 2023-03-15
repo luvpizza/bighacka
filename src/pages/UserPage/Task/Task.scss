@@ -1,0 +1,47 @@
+.new-task{
+    display: flex;
+    align-items: center;
+    // flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    // width: 100%;
+    padding: 10px;
+    border: 1px solid lightgray;
+    margin-top: 25px;
+    &__title{
+        font-size: 28px;
+    }
+    &__description{
+        padding: 10px 0;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    &__data{
+        width: 300px;
+    }
+}
+
+.difficulty{
+    &-easy, &-normal, &-high{
+        width: 100px;
+        align-self: flex-end;
+        text-align: center;
+        padding: 10px 5px;
+        border-radius: 10px;
+        border: 1px solid;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    &-easy{
+        color: green;
+        background: lightgreen;
+    }
+    &-normal{
+        color: rgb(136, 136, 0);
+        background: rgb(255, 255, 140);
+    }
+    &-high{
+        color: rgb(160, 0, 0);
+        background: rgb(255, 143, 143);
+    }
+}

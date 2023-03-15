@@ -1,0 +1,46 @@
+.create-task__form {
+    background: #FFFFFF;
+    box-shadow: 12px 15px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 35px;
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    padding: 70px;
+}
+input,
+textarea {
+    text-align: left;
+    padding: 15px;
+}
+
+.task {
+    &__title {
+        margin-top: 25px;
+        width: 450px;
+    }
+    &__description {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 29px;
+        color: #737373;
+        background: #FFFFFF;
+        border: 1px solid #9F9F9F;
+        border-radius: 15px;
+        width: 450px;
+        height: 200px;
+        resize: none;
+        margin-top: 25px;
+        &:focus {
+            outline: none !important;
+            border: 2px solid green;
+        }
+    }
+
+    &__create-btn {
+        width: 450px;
+        margin-top: 40px;
+    }
+
+}

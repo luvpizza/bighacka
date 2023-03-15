@@ -1,9 +1,7 @@
 
+.moderator {
 
-
-.moderator{
-
-    &__container{
+    &__container {
         padding-top: 80px;
         margin: 0 auto;
         display: flex;
@@ -11,42 +9,42 @@
         width: max-content;
     }
 
-    &__card{
-    align-self: flex-start;
-    display: flex;
-    background: #FFFFFF;
-    box-shadow: 15px 15px 8px rgba(0, 0, 0, 0.25);
-    border-radius: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px;
-    width: 400px;
-    height: 75px;
+    &__card {
+        align-self: flex-start;
+        display: flex;
+        background: #FFFFFF;
+        box-shadow: 15px 15px 8px rgba(0, 0, 0, 0.25);
+        border-radius: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px;
+        width: 400px;
+        height: 75px;
     }
-    &__name{
+    &__name {
         font-size: 36px;
         font-weight: 700;
     }
-    &__role{
+    &__role {
         color: #3B994A;
     }
 }
 
-.reports__text{
+.reports__text {
     font-size: 42px;
     margin-top: 40px;
     width: 250px;
     text-align: right;
     align-self: flex-end;
 }
-.reports__container{
+.reports__container {
     margin-top: 40px;
     background: #FFFFFF;
-    padding: 40px 40px;
+    padding: 40px;
     box-shadow: 12px 15px 8px rgba(0, 0, 0, 0.25);
     border-radius: 36px;
-    
+
     height: max-content;
     display: flex;
     flex-direction: column;

@@ -1,31 +1,31 @@
-.main{
+.main {
     background: #eeeeee;
     height: 100vh;
 }
-.login{
-    &__image{
+.login {
+    &__image {
         position: absolute;
         top: 200px;
         width: 65%;
         height: 65%;
-        & > img{
+        & > img {
             width: 100%;
             height: 100%;
             filter: drop-shadow(-10px 12px 3px rgba(29, 99, 41, 0.37));
             object-fit: cover;
             object-position: center;
             transition: 0.2s;
-            &:hover{
+            &:hover {
                 transform: scale(0.95);
             }
         }
     }
-    
+
 }
 
-.login-form{
-        position: fixed;
-        right: 50px;
-        top: 150px;
-    
+.login-form {
+    position: fixed;
+    right: 50px;
+    top: 150px;
+
 }

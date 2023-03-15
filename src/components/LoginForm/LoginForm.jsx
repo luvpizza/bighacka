@@ -37,12 +37,13 @@ const LoginForm = ({className}) => {
         }
       }
 
-    let role = 2
+    let role = 1
     const navigate = useNavigate()
 
     const handleClick = async (e) => {
         e.preventDefault()
         
+        //  фейк логин в зависимости от роли
         switch (role){
             default: break;
 
@@ -54,6 +55,8 @@ const LoginForm = ({className}) => {
                 break;
             
         }
+
+        // 
 
         if(email && password){
             console.log(email, password);

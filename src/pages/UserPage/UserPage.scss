@@ -1,0 +1,15 @@
+
+.user{
+    &__container{
+        padding-top: 80px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        width: max-content;
+    }
+    &__top{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+}
